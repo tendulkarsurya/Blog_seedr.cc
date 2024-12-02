@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Layout from "./components/Layout";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +24,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Layout
+          title="Seedr.cc Blog - TendulkarSuriya"
+          description="Explore Seedr.cc, a platform for fast, secure, and convenient torrenting. Learn about its features, benefits, and more."
+        >
+          {children}
+        </Layout>
       </body>
     </html>
   );

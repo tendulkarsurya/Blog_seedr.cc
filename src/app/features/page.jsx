@@ -1,11 +1,11 @@
 import React from "react";
-import SeederBlog from "./SeederBlog";
-// import Layout from "./components/Layout";
+import Features from "./Features";
+// import Layout from "../components/Layout";
 
 const page = () => {
   return (
     <div>
-      <SeederBlog />
+      <Features />
     </div>
   );
 };
